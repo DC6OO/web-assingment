@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Translation App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Multilingual Translator</h2>
+
+<button id="darkMode">🌙 Dark Mode</button>
+
+<div class="top-controls">
+
+<select id="fromLang">
+<option value="auto">Detect Language</option>
+<option value="en" selected>English</option>
+<option value="fr">French</option>
+</select>
+
+<button id="swap">⇄</button>
+
+<select id="toLang">
+<option value="fr" selected>French</option>
+<option value="en">English</option>
+</select>
+
+</div>
+
+<div class="boxes">
+
+<div class="box">
+<label>Input</label>
+<textarea id="inputText" maxlength="500"></textarea>
+
+<div class="actions">
+<button id="listenInput">🔊 Listen</button>
+<button id="copyInput">📋 Copy</button>
+<span id="counter">0/500</span>
+</div>
+</div>
+
+<div class="box">
+<label>Output</label>
+<textarea id="outputText" readonly></textarea>
+
+<div class="actions">
+<button id="listenOutput">🔊 Listen</button>
+<button id="copyOutput">📋 Copy</button>
+</div>
+</div>
+
+</div>
+
+<button id="translateBtn">Translate</button>
+
+<p id="loading"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

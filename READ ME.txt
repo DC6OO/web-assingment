@@ -1,0 +1,158 @@
+# Multilingual Translation Web Application
+
+## Student Information
+
+**Name:** Daliso Chanda
+**Student Number:** 2200811
+**Programme:** BSE – Software Engineering
+**Course:** Full Stack Development
+**Year:** Year 3 – Semester 2
+
+---
+
+# Project Overview
+
+This project is a **Multilingual Translation Web Application** developed using **HTML, CSS, and JavaScript**. The application allows users to translate short text messages between different languages using the **MyMemory Translation API**.
+
+The system provides an interactive interface where users can input text, choose a source language and target language, and instantly receive translated results.
+
+This project demonstrates the integration of a **frontend user interface with an external translation API**, simulating a real-world feature that could be used in messaging platforms, travel applications, or collaboration tools.
+
+---
+
+# Features
+
+The application includes the following functionality:
+
+* Translate text between **English and French**
+* **Automatic language detection**
+* **Swap languages** feature
+* **Real-time translation** with debounce
+* **Character limit (500 characters)**
+* **Text-to-Speech** for input and translated text
+* **Copy text** functionality
+* **Loading indicator** during translation
+* **Error handling** for failed API requests
+* **Responsive design** for mobile devices
+* **Dark mode toggle**
+
+---
+
+# Technologies Used
+
+* HTML
+* CSS
+* JavaScript
+* MyMemory Translation API
+
+API Endpoint used:
+
+https://api.mymemory.translated.net/get
+
+---
+
+# Project Structure
+
+```
+translator-app
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+---
+
+# Setup Instructions
+
+Follow these steps to run the project locally:
+
+### 1. Download the Project
+
+Download the project files or clone the repository from GitHub.
+
+Example:
+
+```
+git clone https://github.com/your-username/translator-app.git
+```
+
+---
+
+### 2. Open the Project Folder
+
+Navigate to the project folder on your computer.
+
+---
+
+### 3. Run the Application
+
+Open the **index.html** file in any modern web browser such as:
+
+* Google Chrome
+* Microsoft Edge
+* Firefox
+
+No server installation is required because the project runs entirely in the browser.
+
+---
+
+### 4. Use the Application
+
+1. Enter text into the **input box**
+2. Select the **source language**
+3. Select the **target language**
+4. Click **Translate**
+
+The translated text will appear in the output box.
+
+---
+
+# API Integration
+
+The application retrieves translation data using the **MyMemory Translation API**.
+
+Example API request used in the project:
+
+```
+fetch(`https://api.mymemory.translated.net/get?q=Hello&langpair=en|fr`)
+```
+
+The API returns a JSON response containing the translated text.
+
+---
+
+# Default Behavior
+
+When the application loads, it automatically translates:
+
+**"Hello, how are you"**
+
+from **English → French**.
+
+---
+
+# Error Handling
+
+If the API request fails due to network issues or server errors, the application will display a message indicating that the translation failed.
+
+---
+
+# Future Improvements
+
+Possible improvements for future development include:
+
+* Support for additional languages
+* Speech recognition input
+* Translation history
+* User authentication
+* Saving favorite translations
+
+---
+
+# Conclusion
+
+This project demonstrates how a **frontend web application can interact with an external API** to provide real-time translation functionality. It highlights key concepts in **full stack development**, including API integration, user interface design, and responsive web development.
+
+---
